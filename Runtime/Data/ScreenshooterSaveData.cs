@@ -33,6 +33,9 @@ namespace Teamon.Tools.Screenshooter
 			new ScreenshotData("iPhone Xs Max (No UI)", new Vector2(1242, 2688)) {captureOverlayUI = false},
 		};
 
+		
+#if UNITY_EDITOR
+
 		public static void SaveSettings(ScreenshooterSaveData data)
 		{
 			var assetPath = UnityEditor.AssetDatabase.GetAssetPath(data);
@@ -69,5 +72,7 @@ namespace Teamon.Tools.Screenshooter
 				return UnityEditor.AssetDatabase.LoadAssetAtPath<ScreenshooterSaveData>(path);
 			}
 		}
+		
+#endif // UNITY_EDITOR
 	}
 }
