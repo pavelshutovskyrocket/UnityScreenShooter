@@ -1,6 +1,9 @@
-﻿public static class PredefinedConfigs {
-	public static ScreenshotData[] Android =
+﻿namespace Teamon.Tools.Screenshooter
+{
+	public static class PredefinedConfigs
 	{
+		public static ScreenshotData[] Android =
+		{
 			new ScreenshotData("Nexus 1", 480, 800),
 			new ScreenshotData("Nexus S", 480, 800),
 			new ScreenshotData("Nexus Galaxy", 768, 1280),
@@ -15,8 +18,8 @@
 			new ScreenshotData("Nexus 10", 1600, 2560),
 		};
 
-	public static ScreenshotData[] iOS =
-	{
+		public static ScreenshotData[] iOS =
+		{
 			new ScreenshotData("iPhone SE", 640, 1136),
 			new ScreenshotData("iPhone 6", 750, 1334),
 			new ScreenshotData("iPhone 6 Plus", 1080, 1920),
@@ -31,16 +34,16 @@
 
 			new ScreenshotData("iPad Pro (9.7-inch)", 1536, 2048),
 			new ScreenshotData("iPad Pro 10.5-inch", 2732, 1668),
-			new ScreenshotData("iPad Pro (12.9-inch)", 2048 , 2732),
-			new ScreenshotData("iPad Pro 12.9-inch (2nd generation)", 2048 , 2732),
+			new ScreenshotData("iPad Pro (12.9-inch)", 2048, 2732),
+			new ScreenshotData("iPad Pro 12.9-inch (2nd generation)", 2048, 2732),
 			new SeparatorScreenshotData(),
 
 			new ScreenshotData("iPad Air 2", 1536, 2048),
 			new ScreenshotData("iPad Mini 4", 1536, 2048),
 		};
 
-	public static ScreenshotData[] Standalone =
-	{
+		public static ScreenshotData[] Standalone =
+		{
 			new ScreenshotData("XGA", 1024, 768),
 			new ScreenshotData("SXGA", 1280, 1024),
 			new ScreenshotData("WXGA", 1280, 800),
@@ -64,4 +67,5 @@
 			new ScreenshotData("8K UHD", 7680, 4320),
 			new ScreenshotData("8K UHD", 8192, 4320),
 		};
+	}
 }

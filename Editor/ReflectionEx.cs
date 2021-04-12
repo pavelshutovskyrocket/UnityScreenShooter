@@ -2,7 +2,8 @@
 using System.Reflection;
 using UnityEditor;
 
-namespace Screenshooter.Utils {
+namespace Teamon.Tools.Screenshooter.Utils
+{
 	public static class ReflectionEx {
 		public static Type GetWindowType(string type) {
 			return typeof(EditorWindow).Assembly.GetType("UnityEditor." + type);

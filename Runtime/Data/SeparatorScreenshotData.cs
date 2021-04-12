@@ -1,3 +1,8 @@
-﻿public class SeparatorScreenshotData : ScreenshotData {
+﻿
+namespace Teamon.Tools.Screenshooter
+{
+    public class SeparatorScreenshotData : ScreenshotData
+    {
 
+    }
 }
