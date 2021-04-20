@@ -103,7 +103,7 @@ namespace Teamon.Tools.Screenshooter
 		{
 			return Path.Combine(
 				// Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments),
-				// "..",
+				".",
 				"ScreenshotsUnity"
 				// Application.productName.Replace(" ", "_")
 			);

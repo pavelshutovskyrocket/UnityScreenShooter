@@ -142,7 +142,9 @@ namespace Teamon.Tools.Screenshooter
 				isTakeScreenshot = true;
 
 				if (originalIndex == -1)
+				{
 					originalIndex = (int) GameView.FetchProperty("selectedSizeIndex");
+				}
 
 				object customSize = GetFixedResolution(width, height);
 				SizeHolder.CallMethod("AddCustomSize", customSize);
@@ -164,9 +166,13 @@ namespace Teamon.Tools.Screenshooter
 				try
 				{
 					if (!data.captureOverlayUI || data.targetCamera == ScreenshooterTargetCamera.SceneView)
+					{
 						CaptureScreenshotWithoutUI(data);
+					}
 					else
+					{
 						CaptureScreenshotWithUI(data);
+					}
 				}
 				catch (Exception exception)
 				{
@@ -259,6 +265,13 @@ namespace Teamon.Tools.Screenshooter
 
 			try
 			{
+				var cameras = GameObject.FindObjectsOfType<Camera>();
+				for (int i = 0; i < cameras.Length; i++)
+				{
+					var item = cameras[i];
+					item.Render();
+				}
+				
 				RenderTexture.active = renderTex;
 
 				screenshot = new Texture2D(width, height, TextureFormat.RGB24, false);

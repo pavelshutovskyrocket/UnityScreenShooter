@@ -31,6 +31,9 @@ namespace Teamon.Tools.Screenshooter
 
 			new ScreenshotData("iPhone Xs Max", new Vector2(1242, 2688)),
 			new ScreenshotData("iPhone Xs Max (No UI)", new Vector2(1242, 2688)) {captureOverlayUI = false},
+
+			new ScreenshotData("iPad Pro (12.9-inch)", new Vector2(2048, 2732)),
+			new ScreenshotData("iPad Pro (12.9-inch) (No UI)", new Vector2(2048, 2732)) {captureOverlayUI = false},
 		};
 
 		

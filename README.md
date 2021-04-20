@@ -49,11 +49,11 @@ openupm add com.teamon.screenshooter
 ### (For Unity 2019.2 or later) Through Unity Package Manager
  * MenuItem - Window - Package Manager
  * Add package from git url
- * paste `https://github.com/Team-on/UnityScreenShooter.git`
+ * paste `https://github.com/pavelshutovskyrocket/UnityScreenShooter.git`
 
 ### (For Unity 2018.3 or later) Using Git
 Find the manifest.json file in the Packages folder of your project and add a line to `dependencies` field.
-`"com.teamon.screenshooter": "https://github.com/Team-on/UnityScreenShooter.git"`
+`"com.teamon.screenshooter": "https://github.com/pavelshutovskyrocket/UnityScreenShooter.git"`
 Or, use [UpmGitExtension](https://github.com/mob-sakai/UpmGitExtension) to install and update the package.
 
 ### For Unity 2018.2 or earlier
